@@ -13,6 +13,13 @@ properties:
     type: int
     const: 0
 
+  track-remainders:
+    type: boolean
+    default: false
+    description: |
+      Whether this processor needs to track remainders for sub-pixel accuracy.
+      Set to false for minimum speed processor as it doesn't need this feature.
+
   type:
     type: int
     required: true

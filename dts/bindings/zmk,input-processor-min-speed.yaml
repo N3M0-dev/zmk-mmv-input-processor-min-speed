@@ -8,9 +8,11 @@ description: |
 
 compatible: "zmk,input-processor-min-speed"
 
-include: input-processor-base.yaml
-
 properties:
+  "#input-processor-cells":
+    type: int
+    const: 0
+
   type:
     type: int
     required: true

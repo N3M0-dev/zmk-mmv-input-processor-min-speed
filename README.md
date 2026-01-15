@@ -28,8 +28,8 @@ For example, with a minimum value of 100:
 
 ```yaml
 projects:
-  - name: zmk-input-processor-min-speed
-    path: ../zmk-input-processor-min-speed
+  - name: zmk-mmv-input-processor-min-speed
+    path: ../zmk-mmv-input-processor-min-speed
   - name: zmk
     remote: zmkfirmware
     revision: main
@@ -56,7 +56,7 @@ Add to the top of your `.keymap` file:
 
 ```c
 #include <input/processors.dtsi>
-#include <../zmk-input-processor-min-speed/dts/processors.dtsi>
+#include <../zmk-mmv-input-processor-min-speed/dts/processors.dtsi>
 ```
 
 ### 3. Apply to Input Listeners
@@ -149,7 +149,7 @@ Complete example from `eyelash_sofle.keymap`:
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 #include <input/processors.dtsi>
-#include <../zmk-input-processor-min-speed/dts/processors.dtsi>
+#include <../zmk-mmv-input-processor-min-speed/dts/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 // ... other includes ...
 

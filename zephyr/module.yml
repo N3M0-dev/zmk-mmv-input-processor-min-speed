@@ -1,4 +1,4 @@
-name: zmk-input-processor-min-speed
+name: zmk-mmv-input-processor-min-speed
 build:
   cmake: .
   kconfig: Kconfig
